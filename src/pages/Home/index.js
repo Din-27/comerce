@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, SectionMain, ExploreCategory } from '../../components'
+import { Navbar, SectionMain, ExploreCategory, PopularProducts } from '../../components'
 
 export default function Home() {
     return (
@@ -9,6 +9,7 @@ export default function Home() {
                 <SectionMain />
             </div >
             <ExploreCategory />
+            <PopularProducts/>
         </div>
     )
 }

@@ -1,19 +1,27 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { fadeInUp } from 'react-animations';
+import styled, { keyframes } from 'styled-components';
 import chairContent from '../../assets/chair-main.png'
 
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
+
 export default function SectionMain() {
+    const FadeInUpDiv = styled.div`
+  animation: 1s ${fadeInUpAnimation};`;
     return (
         <div>
             <div className='content'>
                 <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
                     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
                         <div class="relative overflow-hidden rounded-lg lg:order-last">
-                            <img
-                                alt="Party"
-                                src={chairContent}
-                                class="h-full w-full my-auto"
-                            />
+                            <FadeInUpDiv>
+                                <img
+                                    alt="Party"
+                                    src={chairContent}
+                                    class="h-full w-full my-auto"
+                                />
+                            </FadeInUpDiv>
                         </div>
                         <div class="lg:py-24 my-auto ml-2">
                             <h2 class="text-3xl font-bold sm:text-4xl">Exclusive Deals of Furniture Collection</h2>

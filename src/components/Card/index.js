@@ -4,7 +4,7 @@ import React from 'react'
 export default function Card(props) {
     console.log(props.length)
     return (
-        <div class="block text-center rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
+        <div class="text-center md:h-80 lg:h-80 block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring">
             <span class="inline-block rounded-lg bg-gray-50 p-3">
                 <img src={props.img} alt="" />
             </span>
